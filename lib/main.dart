@@ -14,14 +14,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/food',
-      routes: {
-        '/': (context) => const HomePage(),
-        '/food': (context) => const FoodPage(),
-        '/food-details': (context) => const FoodDetailsPage(),
-      },
+      home: HomePage(),
     );
   }
 }
