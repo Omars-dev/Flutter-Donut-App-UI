@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_donut_app_ui/tab/burger_tab.dart';
+import 'package:flutter_donut_app_ui/tab/donut_tab.dart';
+import 'package:flutter_donut_app_ui/tab/pancakes.dart';
+import 'package:flutter_donut_app_ui/tab/pizza_tab.dart';
+import 'package:flutter_donut_app_ui/tab/smoothie_tab.dart';
 import 'package:flutter_donut_app_ui/utils/my_tab.dart';
 import 'food.dart';
 
@@ -35,7 +40,7 @@ class HomePage extends StatelessWidget {
             padding: const EdgeInsets.only(left: 20),
             child: IconButton(
               icon: Icon(
-                Icons.menu,
+                Icons.sort,
                 color: Colors.grey[800],
                 size: 36,
               ),
@@ -47,7 +52,7 @@ class HomePage extends StatelessWidget {
               padding: const EdgeInsets.only(right: 20),
               child: IconButton(
                 icon: Icon(
-                  Icons.person,
+                  Icons.account_circle_outlined,
                   color: Colors.grey[800],
                   size: 36,
                 ),
@@ -81,15 +86,15 @@ class HomePage extends StatelessWidget {
             Expanded(
                 child: TabBarView(
               children: [
-                BurgerTab(),
-
                 DonutTab(),
 
-                PanckesTab(),
+                const BurgerTab(),
 
-                PizzaTab(),
-                
-                SmoothieTab()
+                const PancakesTab(),
+
+                const PizzaTab(),
+
+                const SmoothieTab(),
               ],
             ))
           ],
