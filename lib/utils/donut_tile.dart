@@ -6,7 +6,7 @@ class DonutTile extends StatelessWidget {
   final donutColor;
   final String imageName;
 
-  final borderRadius = 16.0;
+  final borderRadius = 20.0;
 
   const DonutTile(
       {super.key,
@@ -18,7 +18,7 @@ class DonutTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(12.0),
+      padding: const EdgeInsets.all(10.0),
       child: Container(
         decoration: BoxDecoration(
           color: donutColor[50],
@@ -35,7 +35,7 @@ class DonutTile extends StatelessWidget {
                       borderRadius: BorderRadius.only(
                           bottomLeft: Radius.circular(borderRadius),
                           topRight: Radius.circular(borderRadius))),
-                  padding: const EdgeInsets.all(12.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 16.0,vertical: 5),
                   child: Text(
                     '\$$donutPrice',
                     style: TextStyle(
@@ -49,7 +49,7 @@ class DonutTile extends StatelessWidget {
 
             //TODO: Price
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 36, vertical: 16),
+              padding: const EdgeInsets.symmetric(horizontal: 36, vertical: 12),
               child: Image.asset(imageName),
             ),
 
@@ -64,9 +64,9 @@ class DonutTile extends StatelessWidget {
               style: TextStyle(color: Colors.grey[600]),
             ),
 
-            const SizedBox(height: 12),
+            const SizedBox(height: 10),
             Padding(
-              padding: const EdgeInsets.all(12.0),
+              padding: const EdgeInsets.symmetric(horizontal: 12.0,vertical: 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [

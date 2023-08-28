@@ -5,7 +5,6 @@ import 'package:flutter_donut_app_ui/tab/pancakes.dart';
 import 'package:flutter_donut_app_ui/tab/pizza_tab.dart';
 import 'package:flutter_donut_app_ui/tab/smoothie_tab.dart';
 import 'package:flutter_donut_app_ui/utils/my_tab.dart';
-import 'food.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({Key? key}) : super(key: key);
@@ -80,23 +79,32 @@ class HomePage extends StatelessWidget {
             ),
             const SizedBox(height: 24),
             //TODO: Tab Bar
-            TabBar(tabs: myTabs),
+            TabBar(
+              physics: const ClampingScrollPhysics(),
+                unselectedLabelColor: Colors.pink,
+                padding: const EdgeInsets.symmetric(horizontal: 12.0),
+                labelPadding: const EdgeInsets.all(0.0),
+                indicatorPadding: const EdgeInsets.all(0.0),
+                indicator: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: Colors.grey[200]
+                ),
+
+                tabs: myTabs
+            ),
 
             //TODO: Tab Bar View
             Expanded(
                 child: TabBarView(
               children: [
                 DonutTab(),
-
                 const BurgerTab(),
-
                 const PancakesTab(),
-
                 const PizzaTab(),
-
                 const SmoothieTab(),
               ],
-            ))
+            )),
+            const SizedBox(height: 15),
           ],
         ),
       ),

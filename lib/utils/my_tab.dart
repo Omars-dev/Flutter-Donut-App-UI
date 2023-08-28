@@ -8,11 +8,11 @@ class MyTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Tab(
-      height: 80,
+      height: 65,
       child: Container(
-        padding: EdgeInsets.all(12),
+        padding: EdgeInsets.all(10),
         decoration: BoxDecoration(
-          color: Colors.grey[200],
+          // border: Border.all(color: Colors.grey[200]!,),
           borderRadius: BorderRadius.circular(20)
         ),
         child: Image.asset(iconPath,color: Colors.grey[600],),
