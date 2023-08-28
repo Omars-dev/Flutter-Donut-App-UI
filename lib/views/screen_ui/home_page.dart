@@ -92,13 +92,14 @@ class HomePage extends StatelessWidget {
 
                 tabs: myTabs
             ),
+            const SizedBox(height: 5),
 
             //TODO: Tab Bar View
             Expanded(
                 child: TabBarView(
               children: [
                 DonutTab(),
-                const BurgerTab(),
+                BurgerTab(),
                 const PancakesTab(),
                 const PizzaTab(),
                 const SmoothieTab(),
