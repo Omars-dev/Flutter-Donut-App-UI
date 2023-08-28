@@ -85,6 +85,7 @@ class HomePage extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 12.0),
                 labelPadding: const EdgeInsets.all(0.0),
                 indicatorPadding: const EdgeInsets.all(0.0),
+                indicatorColor: Colors.transparent,
                 indicator: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
                   color: Colors.grey[200]
