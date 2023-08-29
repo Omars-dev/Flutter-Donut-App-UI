@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_donut_app_ui/tab/burger_tab.dart';
 import 'package:flutter_donut_app_ui/tab/donut_tab.dart';
-import 'package:flutter_donut_app_ui/tab/pancakes.dart';
+import 'package:flutter_donut_app_ui/tab/pancakes_tab.dart';
 import 'package:flutter_donut_app_ui/tab/pizza_tab.dart';
 import 'package:flutter_donut_app_ui/tab/smoothie_tab.dart';
 import 'package:flutter_donut_app_ui/utils/my_tab.dart';
@@ -101,7 +101,7 @@ class HomePage extends StatelessWidget {
               children: [
                 DonutTab(),
                 BurgerTab(),
-                const PancakesTab(),
+                PancakeTab(),
                 const PizzaTab(),
                 const SmoothieTab(),
               ],

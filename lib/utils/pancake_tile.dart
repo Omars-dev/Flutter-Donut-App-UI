@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
-class BurgerTile extends StatelessWidget {
-  final String burgerFlavor;
-  final String burgerPrice;
-  final burgerColor;
+class PancakeTile extends StatelessWidget {
+  final String pancakeFlavor;
+  final String pancakePrice;
+  final pancakeColor;
   final String imageName;
 
   final borderRadius = 20.0;
 
-  const BurgerTile(
+  const PancakeTile(
       {super.key,
-        required this.burgerFlavor,
-        required this.burgerPrice,
-        this.burgerColor,
+        required this.pancakeFlavor,
+        required this.pancakePrice,
+        this.pancakeColor,
         required this.imageName});
 
   @override
@@ -21,7 +21,7 @@ class BurgerTile extends StatelessWidget {
       padding: const EdgeInsets.all(10.0),
       child: Container(
         decoration: BoxDecoration(
-          color: burgerColor[50],
+          color: pancakeColor[50],
           borderRadius: BorderRadius.circular(borderRadius),
         ),
         child: Column(
@@ -31,15 +31,15 @@ class BurgerTile extends StatelessWidget {
               children: [
                 Container(
                   decoration: BoxDecoration(
-                      color: burgerColor[100],
+                      color: pancakeColor[100],
                       borderRadius: BorderRadius.only(
                           bottomLeft: Radius.circular(borderRadius),
                           topRight: Radius.circular(borderRadius))),
                   padding: const EdgeInsets.symmetric(horizontal: 16.0,vertical: 5),
                   child: Text(
-                    '\$$burgerPrice',
+                    '\$$pancakePrice',
                     style: TextStyle(
-                        color: burgerColor[800],
+                        color: pancakeColor[800],
                         fontSize: 18,
                         fontWeight: FontWeight.bold),
                   ),
@@ -55,12 +55,12 @@ class BurgerTile extends StatelessWidget {
 
             //TODO: Text
             Text(
-              burgerFlavor,
+              pancakeFlavor,
               style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
             ),
             const SizedBox(height: 4),
             Text(
-              'Burger King',
+              'Dunkins',
               style: TextStyle(color: Colors.grey[600]),
             ),
 
@@ -70,8 +70,8 @@ class BurgerTile extends StatelessWidget {
               child: Container(
                 padding: EdgeInsets.symmetric(horizontal: 6,vertical: 3),
                 decoration: BoxDecoration(
-                  color: Colors.pink[100],
-                  borderRadius: BorderRadius.circular(12)
+                    color: Colors.pink[100],
+                    borderRadius: BorderRadius.circular(12)
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
