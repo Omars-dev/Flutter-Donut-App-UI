@@ -7,7 +7,7 @@ class SmoothieTab extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: const Center(
-        child: Text('Smoothie Tab'),
+        child: Text('Smoothie Tab',style: TextStyle(fontSize: 40,color: Colors.black87),),
       ),
     );
   }

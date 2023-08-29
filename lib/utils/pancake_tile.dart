@@ -60,7 +60,7 @@ class PancakeTile extends StatelessWidget {
             ),
             const SizedBox(height: 4),
             Text(
-              'Dunkins',
+              'Akkas',
               style: TextStyle(color: Colors.grey[600]),
             ),
 

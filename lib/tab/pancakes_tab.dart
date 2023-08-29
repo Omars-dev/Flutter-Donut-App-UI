@@ -5,10 +5,10 @@ class PancakeTab extends StatelessWidget {
   PancakeTab({Key? key}) : super(key: key);
 
   List pancakeOnSale = [
-    ["Egg", "30", Colors.blue, "assets/images/Egg.png"],
-    ["Honey", "155", Colors.red, "assets/images/Honey.png"],
+    ["Egg Pancake", "30", Colors.green, "assets/images/Egg.png"],
+    ["Honey", "155", Colors.pink, "assets/images/Honey.png"],
     ["Regular", "45", Colors.purple, "assets/images/Regular.png"],
-    ["Strawberry", "70", Colors.brown, "assets/images/Strawberry.png"],
+    ["Strawberry", "70", Colors.orange, "assets/images/Strawberry.png"],
   ];
 
   @override

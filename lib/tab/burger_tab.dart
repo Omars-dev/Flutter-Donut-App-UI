@@ -5,10 +5,10 @@ class BurgerTab extends StatelessWidget {
   BurgerTab({Key? key}) : super(key: key);
 
   List burgerOnSale = [
-    ["Veggie", "40", Colors.blue, "assets/images/veggie_burger.png"],
-    ["Cheese Burger", "55", Colors.red, "assets/images/cheese_burger.png"],
-    ["Hamburger", "75", Colors.purple, "assets/images/hamburger.png"],
-    ["Beef Cheese DL", "100", Colors.brown, "assets/images/beef_cheese.png"],
+    ["Veggie", "40", Colors.purple, "assets/images/veggie_burger.png"],
+    ["Cheese Burger", "55", Colors.teal, "assets/images/cheese_burger.png"],
+    ["Hamburger", "75", Colors.blue, "assets/images/hamburger.png"],
+    ["Beef Cheese DL", "100", Colors.pink, "assets/images/beef_cheese.png"],
   ];
 
   @override

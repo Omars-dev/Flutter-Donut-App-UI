@@ -64,21 +64,28 @@ class DonutTile extends StatelessWidget {
               style: TextStyle(color: Colors.grey[600]),
             ),
 
-            const SizedBox(height: 10),
+            const SizedBox(height: 6),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 12.0,vertical: 10),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Icon(
-                    Icons.favorite,
-                    color: Colors.pink[400],
-                  ),
-                  Icon(
-                    Icons.add,
-                    color: Colors.grey[800],
-                  ),
-                ],
+              padding: const EdgeInsets.symmetric(horizontal: 12.0,vertical: 12),
+              child: Container(
+                padding: EdgeInsets.symmetric(horizontal: 6,vertical: 3),
+                decoration: BoxDecoration(
+                    color: Colors.pink[100],
+                    borderRadius: BorderRadius.circular(12)
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Icon(
+                      Icons.favorite,
+                      color: Colors.pink[400],
+                    ),
+                    Icon(
+                      Icons.add,
+                      color: Colors.grey[800],
+                    ),
+                  ],
+                ),
               ),
             )
           ],
