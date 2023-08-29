@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:url_strategy/url_strategy.dart';
-import 'views/screen_ui/food.dart';
-import 'views/screen_ui/food_details_page.dart';
 import 'views/screen_ui/home_page.dart';
 
 void main() {
