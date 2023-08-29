@@ -67,11 +67,11 @@ class HomePage extends StatelessWidget {
               child: Row(
                 children: const [
                   Text(
-                    'I want to ',
+                    'So yummy ',
                     style: TextStyle(fontSize: 24),
                   ),
                   Text(
-                    'EAT',
+                    'FOOD',
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32),
                   ),
                 ],
