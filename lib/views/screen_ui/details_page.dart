@@ -309,7 +309,7 @@ class DetailsPage extends StatelessWidget {
                             )
                           ],
                         ),
-                        const Text('ADD TO CART', style: TextStyle(
+                        const Text('ADD to CART', style: TextStyle(
                             color: Colors.black,
                             fontWeight: FontWeight.w700,
                             fontSize: 16),)
