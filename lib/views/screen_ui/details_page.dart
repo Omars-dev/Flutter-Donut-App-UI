@@ -16,7 +16,10 @@ class DetailsPage extends StatelessWidget {
             color: Colors.grey[800],
             size: 32,
           ),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pop(context);
+            print('Backed to Home Page');
+          },
         ),
         title: const Text(
           'Strawberry',
@@ -281,6 +284,7 @@ class DetailsPage extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(vertical: 10,horizontal: 16),
                     margin: const EdgeInsets.symmetric(horizontal: 20),
                     decoration: BoxDecoration(
+                        color: Color(0xFFfbe9f1),
                         borderRadius: BorderRadius.circular(12),
                         border: Border.all(color: Colors.black38)),
                     child: Row(

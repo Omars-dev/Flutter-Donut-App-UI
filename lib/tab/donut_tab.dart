@@ -15,7 +15,7 @@ class DonutTab extends StatelessWidget {
   Widget build(BuildContext context) {
     return GridView.builder(
       scrollDirection: Axis.vertical,
-        padding: EdgeInsets.all(12),
+        padding: const EdgeInsets.all(12),
         itemCount: donutOnSale.length,
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2, childAspectRatio: 1 / 1.5),
