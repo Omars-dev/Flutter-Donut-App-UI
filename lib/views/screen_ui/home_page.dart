@@ -102,7 +102,7 @@ class HomePage extends StatelessWidget {
                 DonutTab(),
                 BurgerTab(),
                 PancakeTab(),
-                const PizzaTab(),
+                PizzaTab(),
                 const SmoothieTab(),
               ],
             )),

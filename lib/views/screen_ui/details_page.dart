@@ -281,7 +281,8 @@ class DetailsPage extends StatelessWidget {
                   const SizedBox(height: 10),
                   //TODO: Button - ADD to CART
                   Container(
-                    padding: const EdgeInsets.symmetric(vertical: 10,horizontal: 16),
+                    padding: const EdgeInsets.symmetric(
+                        vertical: 10, horizontal: 16),
                     margin: const EdgeInsets.symmetric(horizontal: 20),
                     decoration: BoxDecoration(
                         color: Color(0xFFfbe9f1),
@@ -309,10 +310,12 @@ class DetailsPage extends StatelessWidget {
                             )
                           ],
                         ),
-                        const Text('ADD to CART', style: TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.w700,
-                            fontSize: 16),)
+                        // const Text('ADD to CART', style: TextStyle(
+                        //     color: Colors.black,
+                        //     fontWeight: FontWeight.w700,
+                        //     fontSize: 16),)
+
+                        const Icon(Icons.shopping_basket)
                       ],
                     ),
                   )

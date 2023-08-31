@@ -5,10 +5,10 @@ class PizzaTab extends StatelessWidget {
   PizzaTab({Key? key}) : super(key: key);
 
   List pizzaOnSale = [
-    ["Ice Cream", "36", Colors.blue, "assets/images/icecream_pizza.png"],
-    ["Strawberry", "45", Colors.red, "assets/images/strawberry_pizza.png"],
-    ["Grape", "84", Colors.purple, "assets/images/grape_pizza.png"],
-    ["Chocolate", "95", Colors.brown, "assets/images/chocolate_pizza.png"],
+    ["Ice Cream", "36", Colors.blue, "assets/images/icecream_donut.png"],
+    ["Strawberry", "45", Colors.red, "assets/images/strawberry_donut.png"],
+    ["Grape", "84", Colors.purple, "assets/images/grape_donut.png"],
+    ["Chocolate", "95", Colors.brown, "assets/images/chocolate_donut.png"],
   ];
 
   @override
