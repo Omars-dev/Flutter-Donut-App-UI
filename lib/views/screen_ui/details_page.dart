@@ -286,7 +286,7 @@ class DetailsPage extends StatelessWidget {
                         vertical: 10, horizontal: 16),
                     margin: const EdgeInsets.symmetric(horizontal: 20),
                     decoration: BoxDecoration(
-                        color: Color(0xFFfbe9f1),
+                        color: const Color(0xFFfbe9f1),
                         borderRadius: BorderRadius.circular(12),
                         border: Border.all(color: Colors.black38)),
                     child: Row(
@@ -316,7 +316,7 @@ class DetailsPage extends StatelessWidget {
                         //     fontWeight: FontWeight.w700,
                         //     fontSize: 16),)
 
-                        SvgPicture.asset('assets/svg/bag.svg')
+                        SvgPicture.asset('assets/svg/bag.svg',width: 40)
                       ],
                     ),
                   )
