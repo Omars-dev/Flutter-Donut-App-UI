@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class DetailsPage extends StatelessWidget {
   const DetailsPage({Key? key}) : super(key: key);
@@ -315,7 +316,7 @@ class DetailsPage extends StatelessWidget {
                         //     fontWeight: FontWeight.w700,
                         //     fontSize: 16),)
 
-                        const Icon(Icons.shopping_basket)
+                        SvgPicture.asset('assets/svg/bag.svg')
                       ],
                     ),
                   )
