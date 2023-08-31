@@ -311,12 +311,12 @@ class DetailsPage extends StatelessWidget {
                             )
                           ],
                         ),
-                        // const Text('ADD to CART', style: TextStyle(
-                        //     color: Colors.black,
-                        //     fontWeight: FontWeight.w700,
-                        //     fontSize: 16),)
+                        const Text('ADD to CART', style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w700,
+                            fontSize: 16),)
 
-                        SvgPicture.asset('assets/svg/bag.svg',width: 40)
+                        // SvgPicture.asset('assets/svg/bag.svg',width: 40)
                       ],
                     ),
                   )
