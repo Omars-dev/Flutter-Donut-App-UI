@@ -103,7 +103,7 @@ class HomePage extends StatelessWidget {
                 BurgerTab(),
                 PancakeTab(),
                 PizzaTab(),
-                const SmoothieTab(),
+                SmoothieTab(),
               ],
             )),
             const SizedBox(height: 15),
