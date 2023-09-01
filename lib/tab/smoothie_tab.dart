@@ -5,10 +5,10 @@ class SmoothieTab extends StatelessWidget {
   SmoothieTab({Key? key}) : super(key: key);
 
   List pizzaOnSale = [
-    ["Ice Cream", "36", Colors.blue, "assets/images/icecream_donut.png"],
-    ["Strawberry", "45", Colors.red, "assets/images/strawberry_donut.png"],
-    ["Grape", "84", Colors.purple, "assets/images/grape_donut.png"],
-    ["Chocolate", "95", Colors.brown, "assets/images/chocolate_donut.png"],
+    ["Strawberry Banana", "50", Colors.pink, "assets/images/icecream_donut.png"],
+    ["Blueberry Almond", "75", Colors.blue, "assets/images/strawberry_donut.png"],
+    ["Cherry Almond", "34", Colors.red, "assets/images/grape_donut.png"],
+    ["Mixed Berry", "120", Colors.purple, "assets/images/chocolate_donut.png"],
   ];
 
   @override
