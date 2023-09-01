@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_donut_app_ui/views/screen_ui/details_new.dart';
 import 'package:flutter_donut_app_ui/views/screen_ui/details_page.dart';
 
 class DonutTile extends StatelessWidget {
@@ -51,7 +52,7 @@ class DonutTile extends StatelessWidget {
             //TODO: Price
             GestureDetector(
               onTap: (){
-                Navigator.of(context).push(MaterialPageRoute(builder: (context)=>const DetailsPage()));
+                Navigator.of(context).push(MaterialPageRoute(builder: (context)=>const DetailsNew()));
                 print('Details Page');
               },
               child: Padding(
