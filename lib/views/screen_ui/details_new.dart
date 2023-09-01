@@ -1,10 +1,30 @@
 import 'package:flutter/material.dart';
 
+class Ingredient {
+  final String name;
+  final String amount;
+  final String percentage;
+
+  Ingredient({
+    required this.name,
+    required this.amount,
+    required this.percentage,
+  });
+}
+
 class DetailsNew extends StatelessWidget {
   const DetailsNew({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    // Define a list of ingredients
+    final ingredients = [
+      Ingredient(name: 'Sugar', amount: '8 Gram', percentage: '2%'),
+      Ingredient(name: 'Salt', amount: '8 Gram', percentage: '.3%'),
+      Ingredient(name: 'Fat', amount: '8 Gram', percentage: '12%'),
+      Ingredient(name: 'Energy', amount: '140 Kal', percentage: '40%'),
+    ];
+
     return Scaffold(
       backgroundColor: const Color(0xFFfbe9f1),
       appBar: AppBar(
@@ -69,34 +89,68 @@ class DetailsNew extends StatelessWidget {
                     height: 130,
                     child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                      child: ListView(
+                      child: ListView.builder(
                         scrollDirection: Axis.horizontal,
-                        children: const [
-                          // Ingredients items
-                          IngredientItem(
-                            name: 'Sugar',
-                            amount: '8 Gram',
-                            percentage: '2%',
-                          ),
-                          SizedBox(width: 8), // Add spacing of 8
-                          IngredientItem(
-                            name: 'Salt',
-                            amount: '8 Gram',
-                            percentage: '.3%',
-                          ),
-                          SizedBox(width: 8), // Add spacing of 8
-                          IngredientItem(
-                            name: 'Fat',
-                            amount: '8 Gram',
-                            percentage: '12%',
-                          ),
-                          SizedBox(width: 8), // Add spacing of 8
-                          IngredientItem(
-                            name: 'Energy',
-                            amount: '140 Kal',
-                            percentage: '40%',
-                          ),
-                        ],
+                        itemCount: ingredients.length,
+                        itemBuilder: (BuildContext context, int index) {
+                          final isPercentageContainer = index == ingredients.length - 4;
+
+                          return Padding(
+                            padding: const EdgeInsets.only(right: 8.0),
+                            child: Container(
+                              padding: const EdgeInsets.only(
+                                  top: 20, left: 8, right: 8, bottom: 8),
+                              height: 130,
+                              decoration: BoxDecoration(
+                                border: Border.all(color: Colors.grey, width: 1.5),
+                                borderRadius: BorderRadius.circular(50),
+                              ),
+                              child: Column(
+                                children: [
+                                  Text(
+                                    ingredients[index].name,
+                                    style: const TextStyle(
+                                      color: Colors.black,
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  ),
+                                  const SizedBox(height: 3),
+                                  Text(
+                                    ingredients[index].amount,
+                                    style: const TextStyle(
+                                      color: Colors.black38,
+                                      fontSize: 11,
+                                      fontStyle: FontStyle.italic,
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  ),
+                                  const SizedBox(height: 8),
+                                  Container(
+                                    width: 55,
+                                    height: 55,
+                                    padding: const EdgeInsets.all(10),
+                                    alignment: Alignment.center,
+                                    decoration: BoxDecoration(
+                                      color: isPercentageContainer
+                                          ? const Color(0xFF93d6ff)
+                                          : const Color(0xFFfbe9f1),
+                                      borderRadius: BorderRadius.circular(50),
+                                    ),
+                                    child: Text(
+                                      ingredients[index].percentage,
+                                      style: const TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.w600,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          );
+                        },
                       ),
                     ),
                   ),
