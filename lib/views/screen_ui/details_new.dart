@@ -171,7 +171,7 @@ class DetailsNew extends StatelessWidget {
                   const Padding(
                     padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                     child: Text(
-                      'The sweet and subtle salty combo of chocolate meets caramel. Introduce the caramel duo to your mouth!',
+                      'The sweet and subtle salty combo of chocolate meets caramel. Introduce the caramel duo to your mouth! The sweet and subtle salty combo of chocolate meets caramel. Introduce the caramel duo to your mouth!',
                       style: TextStyle(
                         color: Colors.black38,
                         fontWeight: FontWeight.w400,
