@@ -17,6 +17,7 @@ class CartPage extends StatelessWidget {
         ),
         actions: [
           IconButton(onPressed: (){},
+              padding: EdgeInsets.only(right: 20),
               icon: Icon(Icons.share, color: Color(0xFF424242),)
           )
         ],
