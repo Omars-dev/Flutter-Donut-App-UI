@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_donut_app_ui/views/screen_ui/cart.dart';
 
 class Ingredient {
   final String name;
@@ -217,12 +218,17 @@ class DetailsNew extends StatelessWidget {
                             )
                           ],
                         ),
-                        const Text(
-                          'ADD to CART',
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.w700,
-                            fontSize: 16,
+                        GestureDetector(
+                          onTap: (){
+                            Navigator.of(context).push(MaterialPageRoute(builder: (context)=>CartPage()));
+                          },
+                          child: const Text(
+                            'ADD to CART',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.w700,
+                              fontSize: 16,
+                            ),
                           ),
                         ),
                       ],

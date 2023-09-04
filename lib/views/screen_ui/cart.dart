@@ -7,9 +7,13 @@ class CartPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.transparent,
         leading: IconButton(
-          onPressed: (){},
-          icon: Icon(Icons.arrow_back, color: Colors.black,)
+          onPressed: (){
+            Navigator.pop(context);
+          },
+          icon: Icon(Icons.chevron_left, color: Colors.black,)
         ),
       ),
     );
