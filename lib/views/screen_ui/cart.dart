@@ -13,8 +13,13 @@ class CartPage extends StatelessWidget {
           onPressed: (){
             Navigator.pop(context);
           },
-          icon: Icon(Icons.chevron_left, color: Colors.black,)
+          icon: Icon(Icons.chevron_left, color: Color(0xFF424242),)
         ),
+        actions: [
+          IconButton(onPressed: (){},
+              icon: Icon(Icons.share, color: Color(0xFF424242),)
+          )
+        ],
       ),
     );
   }
