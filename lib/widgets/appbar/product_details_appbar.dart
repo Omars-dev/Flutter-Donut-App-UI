@@ -8,6 +8,7 @@ class DetailsAppbar extends StatelessWidget {
     return SizedBox(
       height: 56,
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           GestureDetector(
             onTap: (){},
@@ -16,7 +17,7 @@ class DetailsAppbar extends StatelessWidget {
               child: Icon(Icons.chevron_left,color: Colors.black38,size: 32,),
             ),
           ),
-          const Spacer(),
+          Text('My Items',style: TextStyle(fontWeight: FontWeight.w700,fontSize: 24,color: Colors.black),),
           GestureDetector(
             onTap: (){},
             child: Container(
