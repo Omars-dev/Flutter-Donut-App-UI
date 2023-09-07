@@ -31,6 +31,7 @@ class DetailsNew extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
+        centerTitle: true,
         leading: IconButton(
           icon: Icon(
             Icons.chevron_left,
