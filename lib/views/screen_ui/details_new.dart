@@ -55,6 +55,7 @@ class DetailsNew extends StatelessWidget {
             onTap: (){
               Navigator.of(context).push(MaterialPageRoute(builder: (context)=>CartPage()));
             },
+            child: Icon(Icons.shopping_cart,size: 32,color: Colors.black38,),
           )
         ],
       ),
