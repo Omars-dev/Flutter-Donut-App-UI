@@ -11,7 +11,9 @@ class DetailsAppbar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           GestureDetector(
-            onTap: (){},
+            onTap: (){
+              Navigator.pop(context);
+            },
             child: const Padding(
               padding: EdgeInsets.symmetric(horizontal: 8),
               child: Icon(Icons.chevron_left,color: Colors.black38,size: 32,),
@@ -27,7 +29,7 @@ class DetailsAppbar extends StatelessWidget {
                 color: Colors.pink[50],
                 borderRadius: BorderRadius.circular(100),
               ),
-              child: const Icon(Icons.delete_rounded,size: 32,color: Colors.black38,),
+              child: const Icon(Icons.delete_rounded,size: 30,color: Colors.black38,),
             ),
           )
         ],

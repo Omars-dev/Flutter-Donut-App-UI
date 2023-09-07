@@ -5,7 +5,7 @@ import 'package:flutter_donut_app_ui/widgets/appbar/product_details_appbar.dart'
 class CartPage extends StatelessWidget {
   CartPage({Key? key}) : super(key: key);
 
-  int cartPrice =95;
+  int cartPrice = 95;
   String cartTitle = 'Strawberry Donut';
 
   @override
@@ -46,9 +46,7 @@ class CartPage extends StatelessWidget {
                 margin: const EdgeInsets.symmetric(horizontal: 20),
                 padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
-                    color: themeColor,
-                    borderRadius: BorderRadius.circular(20)
-                ),
+                    color: themeColor, borderRadius: BorderRadius.circular(20)),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -59,39 +57,332 @@ class CartPage extends StatelessWidget {
                       decoration: BoxDecoration(
                           color: Colors.white,
                           // image: DecorationImage(image: AssetImage('assets/images/strawberry_donut.png')),
-                          borderRadius: BorderRadius.circular(12)
-                      ),
+                          borderRadius: BorderRadius.circular(12)),
                       child: Image.asset('assets/images/strawberry_donut.png'),
                     ),
-                    const SizedBox(width: 20,),
+                    const SizedBox(
+                      width: 16,
+                    ),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text('\$$cartTitle',style: const TextStyle(fontSize: 18,color: Colors.black,fontWeight: FontWeight.w700),),
+                        Text(
+                          '$cartTitle',
+                          style: const TextStyle(
+                              fontSize: 18,
+                              color: Colors.black,
+                              fontWeight: FontWeight.w700),
+                        ),
                         const SizedBox(height: 6),
-                        Text('\$$cartPrice',style: const TextStyle(fontSize: 16,color: Colors.pink,fontWeight: FontWeight.w700),),
+                        Text(
+                          '\$$cartPrice',
+                          style: const TextStyle(
+                              fontSize: 16,
+                              color: Colors.pink,
+                              fontWeight: FontWeight.w700),
+                        ),
                         const SizedBox(height: 15),
                         Container(
-                          padding: EdgeInsets.symmetric(horizontal: 8,vertical: 4),
+                          padding:
+                              EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                           decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(12)
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(12),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.pink[200]!.withOpacity(0.2),
+                                spreadRadius: 1,
+                                blurRadius: 5,
+                                offset:
+                                    Offset(0, 1), // changes position of shadow
+                              ),
+                            ],
                           ),
-                          child: const Text('View Cart', style: TextStyle(fontSize: 12,color: Colors.black38,fontWeight: FontWeight.w500),),
+                          child: const Text(
+                            'Checkout',
+                            style: TextStyle(
+                                fontSize: 12,
+                                color: Colors.black38,
+                                fontWeight: FontWeight.w500),
+                          ),
                         ),
                       ],
                     ),
+                    Spacer(),
+                    Container(
+                      width: 28,
+                      padding: EdgeInsets.symmetric(vertical: 6),
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(20)),
+                      child: Column(
+                        children: const [
+                          Text(
+                            '+',
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.w600,
+                                fontSize: 18),
+                          ),
+                          Divider(
+                            height: 1,
+                            color: Colors.pink,
+                          ),
+                          Padding(
+                            padding: EdgeInsets.symmetric(vertical: 4.0),
+                            child: Text(
+                              '1',
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.w600,
+                                  fontSize: 16),
+                            ),
+                          ),
+                          Divider(
+                            height: 1,
+                            color: Colors.pink,
+                          ),
+                          Text(
+                            '-',
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.w600,
+                                fontSize: 18),
+                          ),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              SizedBox(height: 10),
+              Container(
+                margin: const EdgeInsets.symmetric(horizontal: 20),
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                    color: themeColor, borderRadius: BorderRadius.circular(20)),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      height: 85,
+                      width: 85,
+                      padding: EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          // image: DecorationImage(image: AssetImage('assets/images/strawberry_donut.png')),
+                          borderRadius: BorderRadius.circular(12)),
+                      child: Image.asset('assets/images/strawberry_donut.png'),
+                    ),
+                    const SizedBox(
+                      width: 16,
+                    ),
                     Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Expanded(
-                            child: Container(
+                        Text(
+                          '$cartTitle',
+                          style: const TextStyle(
+                              fontSize: 18,
+                              color: Colors.black,
+                              fontWeight: FontWeight.w700),
+                        ),
+                        const SizedBox(height: 6),
+                        Text(
+                          '\$$cartPrice',
+                          style: const TextStyle(
+                              fontSize: 16,
                               color: Colors.pink,
-                              width: 12,
-                              height: 40,
-                            )
-                        )
+                              fontWeight: FontWeight.w700),
+                        ),
+                        const SizedBox(height: 15),
+                        Container(
+                          padding:
+                              EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(12),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.pink[200]!.withOpacity(0.2),
+                                spreadRadius: 1,
+                                blurRadius: 5,
+                                offset:
+                                    Offset(0, 1), // changes position of shadow
+                              ),
+                            ],
+                          ),
+                          child: const Text(
+                            'Checkout',
+                            style: TextStyle(
+                                fontSize: 12,
+                                color: Colors.black38,
+                                fontWeight: FontWeight.w500),
+                          ),
+                        ),
                       ],
+                    ),
+                    Spacer(),
+                    Container(
+                      width: 28,
+                      padding: EdgeInsets.symmetric(vertical: 6),
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(20),
+                      ),
+                      child: Column(
+                        children: const [
+                          Text(
+                            '+',
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.w600,
+                                fontSize: 18),
+                          ),
+                          Divider(
+                            height: 1,
+                            color: Colors.pink,
+                          ),
+                          Padding(
+                            padding: EdgeInsets.symmetric(vertical: 4.0),
+                            child: Text(
+                              '1',
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.w600,
+                                  fontSize: 16),
+                            ),
+                          ),
+                          Divider(
+                            height: 1,
+                            color: Colors.pink,
+                          ),
+                          Text(
+                            '-',
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.w600,
+                                fontSize: 18),
+                          ),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              SizedBox(height: 10),
+              Container(
+                margin: const EdgeInsets.symmetric(horizontal: 20),
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                    color: themeColor, borderRadius: BorderRadius.circular(20)),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      height: 85,
+                      width: 85,
+                      padding: EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          // image: DecorationImage(image: AssetImage('assets/images/strawberry_donut.png')),
+                          borderRadius: BorderRadius.circular(12)),
+                      child: Image.asset('assets/images/strawberry_donut.png'),
+                    ),
+                    const SizedBox(
+                      width: 16,
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          '$cartTitle',
+                          style: const TextStyle(
+                              fontSize: 18,
+                              color: Colors.black,
+                              fontWeight: FontWeight.w700),
+                        ),
+                        const SizedBox(height: 6),
+                        Text(
+                          '\$$cartPrice',
+                          style: const TextStyle(
+                              fontSize: 16,
+                              color: Colors.pink,
+                              fontWeight: FontWeight.w700),
+                        ),
+                        const SizedBox(height: 15),
+                        Container(
+                          padding:
+                              EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(12),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.pink[200]!.withOpacity(0.2),
+                                spreadRadius: 1,
+                                blurRadius: 5,
+                                offset:
+                                    Offset(0, 1), // changes position of shadow
+                              ),
+                            ],
+                          ),
+                          child: const Text(
+                            'Checkout',
+                            style: TextStyle(
+                                fontSize: 12,
+                                color: Colors.black38,
+                                fontWeight: FontWeight.w500),
+                          ),
+                        ),
+                      ],
+                    ),
+                    Spacer(),
+                    Container(
+                      width: 28,
+                      padding: EdgeInsets.symmetric(vertical: 6),
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(20)),
+                      child: Column(
+                        children: const [
+                          Text(
+                            '+',
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.w600,
+                                fontSize: 18),
+                          ),
+                          Divider(
+                            height: 1,
+                            color: Colors.pink,
+                          ),
+                          Padding(
+                            padding: EdgeInsets.symmetric(vertical: 4.0),
+                            child: Text(
+                              '1',
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.w600,
+                                  fontSize: 16),
+                            ),
+                          ),
+                          Divider(
+                            height: 1,
+                            color: Colors.pink,
+                          ),
+                          Text(
+                            '-',
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.w600,
+                                fontSize: 18),
+                          ),
+                        ],
+                      ),
                     )
                   ],
                 ),
