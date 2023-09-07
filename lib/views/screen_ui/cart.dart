@@ -7,6 +7,7 @@ class CartPage extends StatelessWidget {
 
   int cartPrice = 95;
   String cartTitle = 'Strawberry Donut';
+  String cartTitle2 = 'Pink Donut';
 
   @override
   Widget build(BuildContext context) {
@@ -58,7 +59,7 @@ class CartPage extends StatelessWidget {
                           color: Colors.white,
                           // image: DecorationImage(image: AssetImage('assets/images/strawberry_donut.png')),
                           borderRadius: BorderRadius.circular(12)),
-                      child: Image.asset('assets/images/strawberry_donut.png'),
+                      child: Image.asset('assets/images/img_details/strawberry_donut_details.png'),
                     ),
                     const SizedBox(
                       width: 16,
@@ -173,7 +174,7 @@ class CartPage extends StatelessWidget {
                           color: Colors.white,
                           // image: DecorationImage(image: AssetImage('assets/images/strawberry_donut.png')),
                           borderRadius: BorderRadius.circular(12)),
-                      child: Image.asset('assets/images/strawberry_donut.png'),
+                      child: Image.asset('assets/images/img_details/strawberry_donut_details.png'),
                     ),
                     const SizedBox(
                       width: 16,
@@ -289,7 +290,7 @@ class CartPage extends StatelessWidget {
                           color: Colors.white,
                           // image: DecorationImage(image: AssetImage('assets/images/strawberry_donut.png')),
                           borderRadius: BorderRadius.circular(12)),
-                      child: Image.asset('assets/images/strawberry_donut.png'),
+                      child: Image.asset('assets/images/img_details/img.png'),
                     ),
                     const SizedBox(
                       width: 16,
@@ -299,7 +300,7 @@ class CartPage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          '$cartTitle',
+                          '$cartTitle2',
                           style: const TextStyle(
                               fontSize: 18,
                               color: Colors.black,
