@@ -50,6 +50,13 @@ class DetailsNew extends StatelessWidget {
             fontWeight: FontWeight.w600,
           ),
         ),
+        actions: [
+          GestureDetector(
+            onTap: (){
+              Navigator.of(context).push(MaterialPageRoute(builder: (context)=>CartPage()));
+            },
+          )
+        ],
       ),
       body: SingleChildScrollView(
         child: Column(
