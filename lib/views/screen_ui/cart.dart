@@ -3,7 +3,10 @@ import 'package:flutter_donut_app_ui/theme_style/app_constants.dart';
 import 'package:flutter_donut_app_ui/widgets/appbar/product_details_appbar.dart';
 
 class CartPage extends StatelessWidget {
-  const CartPage({Key? key}) : super(key: key);
+  CartPage({Key? key}) : super(key: key);
+
+  int cartPrice =95;
+  String cartTitle = 'Strawberry Donut';
 
   @override
   Widget build(BuildContext context) {
@@ -40,71 +43,59 @@ class CartPage extends StatelessWidget {
               const DetailsAppbar(),
               const SizedBox(height: 30),
               Container(
-                padding: const EdgeInsets.all(12),
                 margin: const EdgeInsets.symmetric(horizontal: 20),
-                decoration: const BoxDecoration(
-                  color: Color(0xFFE9E9E9),
-                  borderRadius: BorderRadius.only(
-                      topRight: Radius.circular(20),
-                      topLeft: Radius.circular(20)),
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                    color: themeColor,
+                    borderRadius: BorderRadius.circular(20)
                 ),
-                child: Container(
-                  padding: const EdgeInsets.all(12),
-                  decoration: BoxDecoration(
-                      color: themeColor,
-                      borderRadius: BorderRadius.circular(20)
-                  ),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Container(
-                        height: 85,
-                        width: 85,
-                        decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(12)
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      height: 85,
+                      width: 85,
+                      padding: EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          // image: DecorationImage(image: AssetImage('assets/images/strawberry_donut.png')),
+                          borderRadius: BorderRadius.circular(12)
+                      ),
+                      child: Image.asset('assets/images/strawberry_donut.png'),
+                    ),
+                    const SizedBox(width: 20,),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('\$$cartTitle',style: const TextStyle(fontSize: 18,color: Colors.black,fontWeight: FontWeight.w700),),
+                        const SizedBox(height: 6),
+                        Text('\$$cartPrice',style: const TextStyle(fontSize: 16,color: Colors.pink,fontWeight: FontWeight.w700),),
+                        const SizedBox(height: 15),
+                        Container(
+                          padding: EdgeInsets.symmetric(horizontal: 8,vertical: 4),
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(12)
+                          ),
+                          child: const Text('View Cart', style: TextStyle(fontSize: 12,color: Colors.black38,fontWeight: FontWeight.w500),),
                         ),
-                      ),
-                      const SizedBox(width: 20,),
-                      Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Container(
-                            height: 20,
-                            width: 150,
-                            decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(12)
-                            ),
-                          ),
-                          const SizedBox(height: 10),
-                          Container(
-                            height: 15,
-                            width: 120,
-                            decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(12)
-                            ),
-                          ),
-                          const SizedBox(height: 18),
-                          Container(
-                            height: 12,
-                            width: 80,
-                            decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(12)
-                            ),
-                            child: Column(
-                              children: [],
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        Expanded(
+                            child: Container(
+                              color: Colors.pink,
+                              width: 12,
+                              height: 40,
+                            )
+                        )
+                      ],
+                    )
+                  ],
                 ),
-              )
+              ),
             ],
           ),
         ),
