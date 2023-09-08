@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_donut_app_ui/theme_style/app_constants.dart';
+import 'package:flutter_donut_app_ui/views/screen_ui/cart_details.dart';
 import 'package:flutter_donut_app_ui/widgets/appbar/product_details_appbar.dart';
 
 class CartPage extends StatelessWidget {
@@ -295,51 +296,56 @@ class CartPage extends StatelessWidget {
                     const SizedBox(
                       width: 16,
                     ),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          '$cartTitle2',
-                          style: const TextStyle(
-                              fontSize: 18,
-                              color: Colors.black,
-                              fontWeight: FontWeight.w700),
-                        ),
-                        const SizedBox(height: 6),
-                        Text(
-                          '\$$cartPrice',
-                          style: const TextStyle(
-                              fontSize: 16,
-                              color: Colors.pink,
-                              fontWeight: FontWeight.w700),
-                        ),
-                        const SizedBox(height: 15),
-                        Container(
-                          padding:
-                              EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(12),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.pink[200]!.withOpacity(0.2),
-                                spreadRadius: 1,
-                                blurRadius: 5,
-                                offset:
-                                    Offset(0, 1), // changes position of shadow
-                              ),
-                            ],
+                    GestureDetector(
+                      onTap: (){
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>CartDetails()));
+                      },
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            '$cartTitle2',
+                            style: const TextStyle(
+                                fontSize: 18,
+                                color: Colors.black,
+                                fontWeight: FontWeight.w700),
                           ),
-                          child: const Text(
-                            'Checkout',
-                            style: TextStyle(
-                                fontSize: 12,
-                                color: Colors.black38,
-                                fontWeight: FontWeight.w500),
+                          const SizedBox(height: 6),
+                          Text(
+                            '\$$cartPrice',
+                            style: const TextStyle(
+                                fontSize: 16,
+                                color: Colors.pink,
+                                fontWeight: FontWeight.w700),
                           ),
-                        ),
-                      ],
+                          const SizedBox(height: 15),
+                          Container(
+                            padding:
+                                EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(12),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.pink[200]!.withOpacity(0.2),
+                                  spreadRadius: 1,
+                                  blurRadius: 5,
+                                  offset:
+                                      Offset(0, 1), // changes position of shadow
+                                ),
+                              ],
+                            ),
+                            child: const Text(
+                              'Checkout',
+                              style: TextStyle(
+                                  fontSize: 12,
+                                  color: Colors.black38,
+                                  fontWeight: FontWeight.w500),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                     Spacer(),
                     Container(
