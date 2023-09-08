@@ -10,7 +10,11 @@ class CartDetails extends StatelessWidget {
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: SafeArea(
-          child: HomeAppbar(),
+          child: Column(
+            children: const [
+              HomeAppbar(),
+            ],
+          ),
         ),
       ),
     );
