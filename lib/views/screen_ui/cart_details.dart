@@ -13,6 +13,14 @@ class CartDetails extends StatelessWidget {
           child: Column(
             children: const [
               HomeAppbar(),
+              SizedBox(height: 30),
+              Text(
+                'Cart Details',
+                style: TextStyle(
+                    fontSize: 30,
+                    color: Colors.black,
+                    fontWeight: FontWeight.w700),
+              ),
             ],
           ),
         ),

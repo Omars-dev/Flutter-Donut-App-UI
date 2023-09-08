@@ -5,10 +5,16 @@ class HomeAppbar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 56,
-      color: Colors.transparent,
-      child: Icon(Icons.chevron_left,color: Colors.black38,size: 32,),
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Container(
+          height: 56,
+          padding: EdgeInsets.symmetric(horizontal: 20),
+          color: Colors.transparent,
+          child: Icon(Icons.chevron_left,color: Colors.black38,size: 32,),
+        ),
+      ],
     );
   }
 }
