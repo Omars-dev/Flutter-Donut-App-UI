@@ -54,9 +54,9 @@ class CartPage extends StatelessWidget {
                     Container(
                       height: 85,
                       width: 85,
-                      padding: EdgeInsets.all(8),
+                      // padding: EdgeInsets.all(8),
                       decoration: BoxDecoration(
-                          color: Colors.white,
+                          color: Colors.transparent,
                           // image: DecorationImage(image: AssetImage('assets/images/strawberry_donut.png')),
                           borderRadius: BorderRadius.circular(12)),
                       child: Image.asset('assets/images/img_details/strawberry_donut_details.png'),
@@ -169,9 +169,9 @@ class CartPage extends StatelessWidget {
                     Container(
                       height: 85,
                       width: 85,
-                      padding: EdgeInsets.all(8),
+                      // padding: EdgeInsets.all(8),
                       decoration: BoxDecoration(
-                          color: Colors.white,
+                          color: Colors.transparent,
                           // image: DecorationImage(image: AssetImage('assets/images/strawberry_donut.png')),
                           borderRadius: BorderRadius.circular(12)),
                       child: Image.asset('assets/images/img_details/strawberry_donut_details.png'),
@@ -285,9 +285,9 @@ class CartPage extends StatelessWidget {
                     Container(
                       height: 85,
                       width: 85,
-                      padding: EdgeInsets.all(8),
+                      // padding: EdgeInsets.all(8),
                       decoration: BoxDecoration(
-                          color: Colors.white,
+                          color: Colors.transparent,
                           // image: DecorationImage(image: AssetImage('assets/images/strawberry_donut.png')),
                           borderRadius: BorderRadius.circular(12)),
                       child: Image.asset('assets/images/img_details/img.png'),

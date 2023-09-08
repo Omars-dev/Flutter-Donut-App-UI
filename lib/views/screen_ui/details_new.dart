@@ -57,7 +57,7 @@ class DetailsNew extends StatelessWidget {
             },
             child: Padding(
               padding: const EdgeInsets.only(right: 20.0),
-              child: Icon(Icons.shopping_cart,size: 32,color: Colors.black38,),
+              child: Icon(Icons.shopping_cart,size: 32,color: Colors.black),
             ),
           )
         ],
