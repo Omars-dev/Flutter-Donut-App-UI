@@ -1,3 +1,4 @@
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_donut_app_ui/tab/burger_tab.dart';
 import 'package:flutter_donut_app_ui/tab/donut_tab.dart';
@@ -80,19 +81,16 @@ class HomePage extends StatelessWidget {
             const SizedBox(height: 24),
             //TODO: Tab Bar
             TabBar(
-              physics: const ClampingScrollPhysics(),
+                physics: const ClampingScrollPhysics(),
                 unselectedLabelColor: Colors.pink,
                 padding: const EdgeInsets.symmetric(horizontal: 12.0),
                 labelPadding: const EdgeInsets.all(0.0),
                 indicatorPadding: const EdgeInsets.all(0.0),
                 indicatorColor: Colors.transparent,
                 indicator: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  color: Colors.grey[200]
-                ),
-
-                tabs: myTabs
-            ),
+                    borderRadius: BorderRadius.circular(20),
+                    color: Colors.grey[200]),
+                tabs: myTabs),
             const SizedBox(height: 5),
 
             //TODO: Tab Bar View
@@ -107,6 +105,34 @@ class HomePage extends StatelessWidget {
               ],
             )),
             const SizedBox(height: 15),
+          ],
+        ),
+        bottomNavigationBar: CurvedNavigationBar(
+          color: Color(0xFFF8BBD0),
+          height: 56,
+          backgroundColor: Colors.transparent,
+          onTap: (index){},
+          items: const [
+            Icon(
+              Icons.home,
+              size: 30,
+              color: Color(0xFFEC407A),
+            ),
+            Icon(
+              Icons.shopping_cart,
+              size: 30,
+              color: Color(0xFFEC407A),
+            ),
+            Icon(
+              Icons.favorite,
+              size: 30,
+              color: Color(0xFFEC407A),
+            ),
+            Icon(
+              Icons.account_circle_outlined,
+              size: 30,
+              color: Color(0xFFEC407A),
+            ),
           ],
         ),
       ),

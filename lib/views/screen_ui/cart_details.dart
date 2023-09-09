@@ -11,15 +11,19 @@ class CartDetails extends StatelessWidget {
       body: SingleChildScrollView(
         child: SafeArea(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: const [
               HomeAppbar(),
-              SizedBox(height: 30),
-              Text(
-                'Cart Details',
-                style: TextStyle(
-                    fontSize: 30,
-                    color: Colors.black,
-                    fontWeight: FontWeight.w700),
+              SizedBox(height: 20),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 28),
+                child: Text(
+                  'Cart Details',
+                  style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.black,
+                      fontWeight: FontWeight.w700),
+                ),
               ),
             ],
           ),
