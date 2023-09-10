@@ -486,11 +486,14 @@ class CartPage extends StatelessWidget {
                             fontWeight: FontWeight.w600,
                             color: Colors.black87,
                             fontSize: 20)),
+                    SizedBox(height:30),
                     MaterialButton(
                       onPressed: () {},
                       color: Colors.pink[200],
+                      shape: RoundedRectangleBorder(borderRadius:BorderRadius.circular(22.0) ),
                       padding:
                           EdgeInsets.symmetric(vertical: 10, horizontal: 16),
+
                       child: Text(
                         'Checkout',
                         style: TextStyle(
