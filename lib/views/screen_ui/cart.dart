@@ -60,14 +60,16 @@ class CartPage extends StatelessWidget {
                           color: Colors.transparent,
                           // image: DecorationImage(image: AssetImage('assets/images/strawberry_donut.png')),
                           borderRadius: BorderRadius.circular(12)),
-                      child: Image.asset('assets/images/img_details/strawberry_donut_details.png'),
+                      child: Image.asset(
+                          'assets/images/img_details/strawberry_donut_details.png'),
                     ),
                     const SizedBox(
                       width: 16,
                     ),
                     GestureDetector(
-                      onTap: (){
-                        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>CartDetails()));
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => CartDetails()));
                       },
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
@@ -90,8 +92,8 @@ class CartPage extends StatelessWidget {
                           ),
                           const SizedBox(height: 15),
                           Container(
-                            padding:
-                            EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                            padding: EdgeInsets.symmetric(
+                                horizontal: 8, vertical: 4),
                             decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(12),
@@ -100,8 +102,8 @@ class CartPage extends StatelessWidget {
                                   color: Colors.pink[200]!.withOpacity(0.2),
                                   spreadRadius: 1,
                                   blurRadius: 5,
-                                  offset:
-                                  Offset(0, 1), // changes position of shadow
+                                  offset: Offset(
+                                      0, 1), // changes position of shadow
                                 ),
                               ],
                             ),
@@ -127,13 +129,18 @@ class CartPage extends StatelessWidget {
                           decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(30)),
-                          child: Icon(Icons.delete_rounded,color: Colors.black38,size: 21,),
+                          child: Icon(
+                            Icons.delete_rounded,
+                            color: Colors.black38,
+                            size: 21,
+                          ),
                         ),
                         SizedBox(height: 30),
                         Container(
                           height: 28,
                           width: 80,
-                          padding: EdgeInsets.only(top: 4,bottom: 6,right: 8,left:8),
+                          padding: EdgeInsets.only(
+                              top: 4, bottom: 6, right: 8, left: 8),
                           decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(20)),
@@ -195,14 +202,16 @@ class CartPage extends StatelessWidget {
                           color: Colors.transparent,
                           // image: DecorationImage(image: AssetImage('assets/images/strawberry_donut.png')),
                           borderRadius: BorderRadius.circular(12)),
-                      child: Image.asset('assets/images/img_details/strawberry_donut_details.png'),
+                      child: Image.asset(
+                          'assets/images/img_details/strawberry_donut_details.png'),
                     ),
                     const SizedBox(
                       width: 16,
                     ),
                     GestureDetector(
-                      onTap: (){
-                        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>CartDetails()));
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => CartDetails()));
                       },
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
@@ -225,8 +234,8 @@ class CartPage extends StatelessWidget {
                           ),
                           const SizedBox(height: 15),
                           Container(
-                            padding:
-                            EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                            padding: EdgeInsets.symmetric(
+                                horizontal: 8, vertical: 4),
                             decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(12),
@@ -235,8 +244,8 @@ class CartPage extends StatelessWidget {
                                   color: Colors.pink[200]!.withOpacity(0.2),
                                   spreadRadius: 1,
                                   blurRadius: 5,
-                                  offset:
-                                  Offset(0, 1), // changes position of shadow
+                                  offset: Offset(
+                                      0, 1), // changes position of shadow
                                 ),
                               ],
                             ),
@@ -262,13 +271,18 @@ class CartPage extends StatelessWidget {
                           decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(30)),
-                          child: Icon(Icons.delete_rounded,color: Colors.black38,size: 21,),
+                          child: Icon(
+                            Icons.delete_rounded,
+                            color: Colors.black38,
+                            size: 21,
+                          ),
                         ),
                         SizedBox(height: 30),
                         Container(
                           height: 28,
                           width: 80,
-                          padding: EdgeInsets.only(top: 4,bottom: 6,right: 8,left:8),
+                          padding: EdgeInsets.only(
+                              top: 4, bottom: 6, right: 8, left: 8),
                           decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(20)),
@@ -330,14 +344,16 @@ class CartPage extends StatelessWidget {
                           color: Colors.transparent,
                           // image: DecorationImage(image: AssetImage('assets/images/strawberry_donut.png')),
                           borderRadius: BorderRadius.circular(12)),
-                      child: Image.asset('assets/images/img_details/strawberry_donut_details.png'),
+                      child: Image.asset(
+                          'assets/images/img_details/strawberry_donut_details.png'),
                     ),
                     const SizedBox(
                       width: 16,
                     ),
                     GestureDetector(
-                      onTap: (){
-                        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>CartDetails()));
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => CartDetails()));
                       },
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
@@ -360,8 +376,8 @@ class CartPage extends StatelessWidget {
                           ),
                           const SizedBox(height: 15),
                           Container(
-                            padding:
-                                EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                            padding: EdgeInsets.symmetric(
+                                horizontal: 8, vertical: 4),
                             decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(12),
@@ -370,8 +386,8 @@ class CartPage extends StatelessWidget {
                                   color: Colors.pink[200]!.withOpacity(0.2),
                                   spreadRadius: 1,
                                   blurRadius: 5,
-                                  offset:
-                                      Offset(0, 1), // changes position of shadow
+                                  offset: Offset(
+                                      0, 1), // changes position of shadow
                                 ),
                               ],
                             ),
@@ -397,13 +413,18 @@ class CartPage extends StatelessWidget {
                           decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(30)),
-                          child: Icon(Icons.delete_rounded,color: Colors.black38,size: 21,),
+                          child: Icon(
+                            Icons.delete_rounded,
+                            color: Colors.black38,
+                            size: 21,
+                          ),
                         ),
                         SizedBox(height: 30),
                         Container(
                           height: 28,
                           width: 80,
-                          padding: EdgeInsets.only(top: 4,bottom: 6,right: 8,left:8),
+                          padding: EdgeInsets.only(
+                              top: 4, bottom: 6, right: 8, left: 8),
                           decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(20)),
@@ -448,6 +469,39 @@ class CartPage extends StatelessWidget {
                   ],
                 ),
               ),
+              SizedBox(height: 35),
+              Container(
+                height: 400,
+                padding: EdgeInsets.all(20),
+                decoration: BoxDecoration(
+                    color: Color(0xFFe9e9e9),
+                    borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(30),
+                        topRight: Radius.circular(30))),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Text('Summary',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w600,
+                            color: Colors.black87,
+                            fontSize: 20)),
+                    MaterialButton(
+                      onPressed: () {},
+                      color: Colors.pink[200],
+                      padding:
+                          EdgeInsets.symmetric(vertical: 10, horizontal: 16),
+                      child: Text(
+                        'Checkout',
+                        style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.white),
+                      ),
+                    )
+                  ],
+                ),
+              )
             ],
           ),
         ),
