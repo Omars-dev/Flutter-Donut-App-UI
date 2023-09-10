@@ -291,7 +291,7 @@ class CartPage extends StatelessWidget {
                           color: Colors.transparent,
                           // image: DecorationImage(image: AssetImage('assets/images/strawberry_donut.png')),
                           borderRadius: BorderRadius.circular(12)),
-                      child: Image.asset('assets/images/img_details/img.png'),
+                      child: Image.asset('assets/images/img_details/strawberry_donut_details.png'),
                     ),
                     const SizedBox(
                       width: 16,
@@ -348,48 +348,63 @@ class CartPage extends StatelessWidget {
                       ),
                     ),
                     Spacer(),
-                    Container(
-                      width: 28,
-                      padding: EdgeInsets.symmetric(vertical: 6),
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(20)),
-                      child: Column(
-                        children: const [
-                          Text(
-                            '+',
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontWeight: FontWeight.w600,
-                                fontSize: 18),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          width: 28,
+                          height: 28,
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(30)),
+                          child: Icon(Icons.delete_rounded,color: Colors.black38,size: 21,),
+                        ),
+                        SizedBox(height: 30),
+                        Container(
+                          height: 28,
+                          width: 80,
+                          padding: EdgeInsets.only(top: 4,bottom: 6,right: 8,left:8),
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(20)),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            children: const [
+                              Text(
+                                '+',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 18),
+                              ),
+                              Divider(
+                                height: 1,
+                                color: Colors.pink,
+                              ),
+                              Text(
+                                '1',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 16),
+                              ),
+                              Divider(
+                                height: 1,
+                                color: Colors.pink,
+                              ),
+                              Text(
+                                '-',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 18),
+                              ),
+                            ],
                           ),
-                          Divider(
-                            height: 1,
-                            color: Colors.pink,
-                          ),
-                          Padding(
-                            padding: EdgeInsets.symmetric(vertical: 4.0),
-                            child: Text(
-                              '1',
-                              style: TextStyle(
-                                  color: Colors.black,
-                                  fontWeight: FontWeight.w600,
-                                  fontSize: 16),
-                            ),
-                          ),
-                          Divider(
-                            height: 1,
-                            color: Colors.pink,
-                          ),
-                          Text(
-                            '-',
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontWeight: FontWeight.w600,
-                                fontSize: 18),
-                          ),
-                        ],
-                      ),
+                        ),
+                      ],
                     )
                   ],
                 ),
