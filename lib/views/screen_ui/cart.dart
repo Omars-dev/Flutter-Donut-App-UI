@@ -65,95 +65,115 @@ class CartPage extends StatelessWidget {
                     const SizedBox(
                       width: 16,
                     ),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          '$cartTitle',
-                          style: const TextStyle(
-                              fontSize: 18,
-                              color: Colors.black,
-                              fontWeight: FontWeight.w700),
-                        ),
-                        const SizedBox(height: 6),
-                        Text(
-                          '\$$cartPrice',
-                          style: const TextStyle(
-                              fontSize: 16,
-                              color: Colors.pink,
-                              fontWeight: FontWeight.w700),
-                        ),
-                        const SizedBox(height: 15),
-                        Container(
-                          padding:
-                              EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(12),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.pink[200]!.withOpacity(0.2),
-                                spreadRadius: 1,
-                                blurRadius: 5,
-                                offset:
-                                    Offset(0, 1), // changes position of shadow
-                              ),
-                            ],
-                          ),
-                          child: const Text(
-                            'Checkout',
-                            style: TextStyle(
-                                fontSize: 12,
-                                color: Colors.black38,
-                                fontWeight: FontWeight.w500),
-                          ),
-                        ),
-                      ],
-                    ),
-                    Spacer(),
-                    Container(
-                      width: 28,
-                      padding: EdgeInsets.symmetric(vertical: 6),
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(20)),
+                    GestureDetector(
+                      onTap: (){
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>CartDetails()));
+                      },
                       child: Column(
-                        children: const [
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
                           Text(
-                            '+',
-                            style: TextStyle(
+                            '$cartTitle',
+                            style: const TextStyle(
+                                fontSize: 18,
                                 color: Colors.black,
-                                fontWeight: FontWeight.w600,
-                                fontSize: 18),
+                                fontWeight: FontWeight.w700),
                           ),
-                          Divider(
-                            height: 1,
-                            color: Colors.pink,
+                          const SizedBox(height: 6),
+                          Text(
+                            '\$$cartPrice',
+                            style: const TextStyle(
+                                fontSize: 16,
+                                color: Colors.pink,
+                                fontWeight: FontWeight.w700),
                           ),
-                          Padding(
-                            padding: EdgeInsets.symmetric(vertical: 4.0),
-                            child: Text(
-                              '1',
-                              style: TextStyle(
-                                  color: Colors.black,
-                                  fontWeight: FontWeight.w600,
-                                  fontSize: 16),
+                          const SizedBox(height: 15),
+                          Container(
+                            padding:
+                            EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(12),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.pink[200]!.withOpacity(0.2),
+                                  spreadRadius: 1,
+                                  blurRadius: 5,
+                                  offset:
+                                  Offset(0, 1), // changes position of shadow
+                                ),
+                              ],
                             ),
-                          ),
-                          Divider(
-                            height: 1,
-                            color: Colors.pink,
-                          ),
-                          Text(
-                            '-',
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontWeight: FontWeight.w600,
-                                fontSize: 18),
+                            child: const Text(
+                              'Checkout',
+                              style: TextStyle(
+                                  fontSize: 12,
+                                  color: Colors.black38,
+                                  fontWeight: FontWeight.w500),
+                            ),
                           ),
                         ],
                       ),
+                    ),
+                    Spacer(),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          width: 28,
+                          height: 28,
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(30)),
+                          child: Icon(Icons.delete_rounded,color: Colors.black38,size: 21,),
+                        ),
+                        SizedBox(height: 30),
+                        Container(
+                          height: 28,
+                          width: 80,
+                          padding: EdgeInsets.only(top: 4,bottom: 6,right: 8,left:8),
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(20)),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            children: const [
+                              Text(
+                                '+',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 18),
+                              ),
+                              Divider(
+                                height: 1,
+                                color: Colors.pink,
+                              ),
+                              Text(
+                                '1',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 16),
+                              ),
+                              Divider(
+                                height: 1,
+                                color: Colors.pink,
+                              ),
+                              Text(
+                                '-',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 18),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
                     )
                   ],
                 ),
@@ -180,96 +200,115 @@ class CartPage extends StatelessWidget {
                     const SizedBox(
                       width: 16,
                     ),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          '$cartTitle',
-                          style: const TextStyle(
-                              fontSize: 18,
-                              color: Colors.black,
-                              fontWeight: FontWeight.w700),
-                        ),
-                        const SizedBox(height: 6),
-                        Text(
-                          '\$$cartPrice',
-                          style: const TextStyle(
-                              fontSize: 16,
-                              color: Colors.pink,
-                              fontWeight: FontWeight.w700),
-                        ),
-                        const SizedBox(height: 15),
-                        Container(
-                          padding:
-                              EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(12),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.pink[200]!.withOpacity(0.2),
-                                spreadRadius: 1,
-                                blurRadius: 5,
-                                offset:
-                                    Offset(0, 1), // changes position of shadow
-                              ),
-                            ],
-                          ),
-                          child: const Text(
-                            'Checkout',
-                            style: TextStyle(
-                                fontSize: 12,
-                                color: Colors.black38,
-                                fontWeight: FontWeight.w500),
-                          ),
-                        ),
-                      ],
-                    ),
-                    Spacer(),
-                    Container(
-                      width: 28,
-                      padding: EdgeInsets.symmetric(vertical: 6),
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(20),
-                      ),
+                    GestureDetector(
+                      onTap: (){
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>CartDetails()));
+                      },
                       child: Column(
-                        children: const [
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
                           Text(
-                            '+',
-                            style: TextStyle(
+                            '$cartTitle2',
+                            style: const TextStyle(
+                                fontSize: 18,
                                 color: Colors.black,
-                                fontWeight: FontWeight.w600,
-                                fontSize: 18),
+                                fontWeight: FontWeight.w700),
                           ),
-                          Divider(
-                            height: 1,
-                            color: Colors.pink,
+                          const SizedBox(height: 6),
+                          Text(
+                            '\$$cartPrice',
+                            style: const TextStyle(
+                                fontSize: 16,
+                                color: Colors.pink,
+                                fontWeight: FontWeight.w700),
                           ),
-                          Padding(
-                            padding: EdgeInsets.symmetric(vertical: 4.0),
-                            child: Text(
-                              '1',
-                              style: TextStyle(
-                                  color: Colors.black,
-                                  fontWeight: FontWeight.w600,
-                                  fontSize: 16),
+                          const SizedBox(height: 15),
+                          Container(
+                            padding:
+                            EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(12),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.pink[200]!.withOpacity(0.2),
+                                  spreadRadius: 1,
+                                  blurRadius: 5,
+                                  offset:
+                                  Offset(0, 1), // changes position of shadow
+                                ),
+                              ],
                             ),
-                          ),
-                          Divider(
-                            height: 1,
-                            color: Colors.pink,
-                          ),
-                          Text(
-                            '-',
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontWeight: FontWeight.w600,
-                                fontSize: 18),
+                            child: const Text(
+                              'Checkout',
+                              style: TextStyle(
+                                  fontSize: 12,
+                                  color: Colors.black38,
+                                  fontWeight: FontWeight.w500),
+                            ),
                           ),
                         ],
                       ),
+                    ),
+                    Spacer(),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          width: 28,
+                          height: 28,
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(30)),
+                          child: Icon(Icons.delete_rounded,color: Colors.black38,size: 21,),
+                        ),
+                        SizedBox(height: 30),
+                        Container(
+                          height: 28,
+                          width: 80,
+                          padding: EdgeInsets.only(top: 4,bottom: 6,right: 8,left:8),
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(20)),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            children: const [
+                              Text(
+                                '+',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 18),
+                              ),
+                              Divider(
+                                height: 1,
+                                color: Colors.pink,
+                              ),
+                              Text(
+                                '1',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 16),
+                              ),
+                              Divider(
+                                height: 1,
+                                color: Colors.pink,
+                              ),
+                              Text(
+                                '-',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 18),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
                     )
                   ],
                 ),
