@@ -12,10 +12,12 @@ class CartDetails extends StatelessWidget {
         child: SafeArea(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: const [
-              HomeAppbar(),
-              SizedBox(height: 20),
-              Padding(
+            children: [
+              GestureDetector(onTap: (){
+                Navigator.pop(context);
+              },child: const HomeAppbar()),
+              const SizedBox(height: 20),
+              const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 28),
                 child: Text(
                   'Cart Details',
