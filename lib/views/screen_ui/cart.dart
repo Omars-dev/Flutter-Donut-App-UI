@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_donut_app_ui/theme_style/app_constants.dart';
 import 'package:flutter_donut_app_ui/views/screen_ui/cart_details.dart';
+import 'package:flutter_donut_app_ui/widgets/appbar/product_details_appbar.dart';
 
 class CartPage extends StatelessWidget {
   CartPage({Key? key}) : super(key: key);
@@ -13,37 +14,7 @@ class CartPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        elevation: 0,
-        backgroundColor: Colors.transparent,
-        leading: GestureDetector(
-          onTap: () {
-            Navigator.pop(context);
-          },
-          child: Icon(
-            Icons.chevron_left,
-            color: Colors.black54,
-            size: 32,
-          ),
-        ),
-        centerTitle: true,
-        title: const Text(
-          'My Items',
-          style: TextStyle(
-              fontWeight: FontWeight.w700, fontSize: 24, color: Colors.black),
-        ),
-        actions: [
-          IconButton(
-            icon: const Icon(
-              Icons.delete_rounded,
-              size: 28,
-              color: Colors.black38,
-            ),
-            onPressed: () {},
-          ),
-          SizedBox(width: 8),
-        ],
-      ),
+      appBar: cartAppBar(context),
       body: SingleChildScrollView(
         child: SafeArea(
           child: Column(
