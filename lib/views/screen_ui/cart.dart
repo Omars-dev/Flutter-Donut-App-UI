@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_donut_app_ui/theme_style/app_constants.dart';
 import 'package:flutter_donut_app_ui/views/screen_ui/cart_details.dart';
+import 'package:flutter_donut_app_ui/views/screen_ui/checkout.dart';
 import 'package:flutter_donut_app_ui/widgets/appbar/product_details_appbar.dart';
 
 class CartPage extends StatelessWidget {
@@ -674,7 +675,10 @@ class CartPage extends StatelessWidget {
                     ),
                     const SizedBox(height: 20),
                     MaterialButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => const CheckoutPage()));
+                      },
                       color: Colors.pink[200],
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(22.0)),
