@@ -136,7 +136,6 @@ class CartSummary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 295,
       padding: const EdgeInsets.symmetric(horizontal: 24,vertical: 20),
       decoration: const BoxDecoration(
         color: Color(0xFFe9e9e9),
@@ -156,7 +155,7 @@ class CartSummary extends StatelessWidget {
               fontSize: 20,
             ),
           ),
-          const SizedBox(height: 20),
+          const SizedBox(height: 15),
           Row(
             children: [
               const Text(
@@ -178,7 +177,7 @@ class CartSummary extends StatelessWidget {
               ),
             ],
           ),
-          const SizedBox(height: 15),
+          const SizedBox(height: 10),
           Row(
             children: [
               const Text(
@@ -200,7 +199,7 @@ class CartSummary extends StatelessWidget {
               ),
             ],
           ),
-          const SizedBox(height: 15),
+          const SizedBox(height: 10),
           Row(
             children: [
               const Text(
@@ -223,7 +222,7 @@ class CartSummary extends StatelessWidget {
             ],
           ),
           const Padding(
-            padding: EdgeInsets.symmetric(vertical: 15),
+            padding: EdgeInsets.symmetric(vertical: 12),
             child: Divider(height: 1, color: Colors.black38),
           ),
           Row(
