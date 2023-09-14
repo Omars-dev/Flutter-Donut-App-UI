@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_donut_app_ui/theme_style/app_constants.dart';
 
 // class CartSummary extends StatelessWidget {
 //   const CartSummary({
@@ -135,8 +136,8 @@ class CartSummary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 310,
-      padding: const EdgeInsets.all(24),
+      height: 295,
+      padding: const EdgeInsets.symmetric(horizontal: 24,vertical: 20),
       decoration: const BoxDecoration(
         color: Color(0xFFe9e9e9),
         borderRadius: BorderRadius.only(
@@ -155,7 +156,7 @@ class CartSummary extends StatelessWidget {
               fontSize: 20,
             ),
           ),
-          const SizedBox(height: 30),
+          const SizedBox(height: 20),
           Row(
             children: [
               const Text(
@@ -249,7 +250,7 @@ class CartSummary extends StatelessWidget {
           const SizedBox(height: 20),
           MaterialButton(
             onPressed: onCheckoutPressed,
-            color: Colors.pink[200],
+            color: mainButtonColor,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(22.0),
             ),
@@ -258,7 +259,7 @@ class CartSummary extends StatelessWidget {
               horizontal: 16,
             ),
             child: const Text(
-              'Checkout',
+              'Pay Now',
               style: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.w600,
