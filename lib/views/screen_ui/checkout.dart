@@ -142,7 +142,7 @@ class CheckoutPage extends StatelessWidget {
                             Row(
                               children: const [
                                 Icon(Icons.local_shipping, size: 18),
-                                SizedBox(width: 10),
+                                Spacer(),
                                 Flexible(
                                   child: Text(
                                       'DHL',
@@ -157,7 +157,7 @@ class CheckoutPage extends StatelessWidget {
                             Row(
                               children: const [
                                 Icon(Icons.local_shipping, size: 18),
-                                SizedBox(width: 10),
+                                Spacer(),
                                 Flexible(
                                   child: Text(
                                       'FEDX',
