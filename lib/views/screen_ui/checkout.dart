@@ -172,7 +172,7 @@ class CheckoutPage extends StatelessWidget {
                             Row(
                               children: const [
                                 Icon(Icons.local_shipping, size: 18),
-                                SizedBox(width: 10),
+                                Spacer(),
                                 Flexible(
                                   child: Text(
                                       'REDX',
@@ -181,13 +181,14 @@ class CheckoutPage extends StatelessWidget {
                                           fontWeight: w400,
                                           color: Colors.black54)),
                                 ),
+
                               ],
                             ),
                             const SizedBox(height: 5),
                             Row(
                               children: const [
                                 Icon(Icons.local_shipping, size: 18),
-                                SizedBox(width: 10),
+                                Spacer(),
                                 Flexible(
                                   child: Text(
                                       'PAPER FLY',
