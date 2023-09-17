@@ -141,62 +141,93 @@ class CheckoutPage extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
                             Row(
-                              children: const [
+                              children: [
                                 Icon(Icons.local_shipping, size: 18),
                                 SizedBox(width: 10),
-                                Flexible(
-                                  child: Text(
-                                      'DHL',
-                                      style: TextStyle(
-                                          fontSize: 14,
-                                          fontWeight: w400,
-                                          color: Colors.black54)),
+                                Text(
+                                    'DHL',
+                                    style: TextStyle(
+                                        fontSize: 14,
+                                        fontWeight: w400,
+                                        color: Colors.black54)),
+                                Spacer(),
+                                Container(
+                                  width: 16,
+                                  height: 16,
+                                  decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(50),
+                                      border: Border.all(width: 4,color: mainButtonColor)
+                                  ),
                                 ),
                               ],
                             ),
                             const SizedBox(height: 5),
                             Row(
-                              children: const [
+                              children: [
                                 Icon(Icons.local_shipping, size: 18),
                                 SizedBox(width: 10),
-                                Flexible(
-                                  child: Text(
-                                      'FEDX',
-                                      style: TextStyle(
-                                          fontSize: 14,
-                                          fontWeight: w400,
-                                          color: Colors.black54)),
+                                Text(
+                                    'FEDX',
+                                    style: TextStyle(
+                                        fontSize: 14,
+                                        fontWeight: w400,
+                                        color: Colors.black54)),
+                                Spacer(),
+                                Container(
+                                  width: 16,
+                                  height: 16,
+                                  decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(50),
+                                      border: Border.all(width: 4,color: mainButtonColor)
+                                  ),
                                 ),
                               ],
                             ),
                             const SizedBox(height: 5),
                             Row(
-                              children: const [
+                              children: [
                                 Icon(Icons.local_shipping, size: 18),
                                 SizedBox(width: 10),
-                                Flexible(
-                                  child: Text(
-                                      'REDX',
-                                      style: TextStyle(
-                                          fontSize: 14,
-                                          fontWeight: w400,
-                                          color: Colors.black54)),
+                                const Text(
+                                    'REDX',
+                                    style: TextStyle(
+                                        fontSize: 14,
+                                        fontWeight: w400,
+                                        color: Colors.black54)),
+                                Spacer(),
+                                Container(
+                                  width: 16,
+                                  height: 16,
+                                  decoration: BoxDecoration(
+                                      color: mainButtonColor,
+                                      borderRadius: BorderRadius.circular(50),
+                                      border: Border.all(width: 4,color: mainButtonColor)
+                                  ),
                                 ),
-
                               ],
                             ),
                             const SizedBox(height: 5),
                             Row(
-                              children: const [
+                              children: [
                                 Icon(Icons.local_shipping, size: 18),
                                 SizedBox(width: 10),
-                                Flexible(
-                                  child: Text(
-                                      'PAPER FLY',
-                                      style: TextStyle(
-                                          fontSize: 14,
-                                          fontWeight: w400,
-                                          color: Colors.black54)),
+                                const Text(
+                                    'PAPER FLY',
+                                    style: TextStyle(
+                                        fontSize: 14,
+                                        fontWeight: w400,
+                                        color: Colors.black54)),
+                                Spacer(),
+                                Container(
+                                  width: 16,
+                                  height: 16,
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(50),
+                                    border: Border.all(width: 4,color: mainButtonColor)
+                                  ),
                                 ),
                               ],
                             ),
