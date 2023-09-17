@@ -138,11 +138,12 @@ class CheckoutPage extends StatelessWidget {
                             borderRadius: BorderRadius.circular(20)),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.end,
                           children: [
                             Row(
                               children: const [
                                 Icon(Icons.local_shipping, size: 18),
-                                Spacer(),
+                                SizedBox(width: 10),
                                 Flexible(
                                   child: Text(
                                       'DHL',
@@ -157,7 +158,7 @@ class CheckoutPage extends StatelessWidget {
                             Row(
                               children: const [
                                 Icon(Icons.local_shipping, size: 18),
-                                Spacer(),
+                                SizedBox(width: 10),
                                 Flexible(
                                   child: Text(
                                       'FEDX',
@@ -172,7 +173,7 @@ class CheckoutPage extends StatelessWidget {
                             Row(
                               children: const [
                                 Icon(Icons.local_shipping, size: 18),
-                                Spacer(),
+                                SizedBox(width: 10),
                                 Flexible(
                                   child: Text(
                                       'REDX',
@@ -188,7 +189,7 @@ class CheckoutPage extends StatelessWidget {
                             Row(
                               children: const [
                                 Icon(Icons.local_shipping, size: 18),
-                                Spacer(),
+                                SizedBox(width: 10),
                                 Flexible(
                                   child: Text(
                                       'PAPER FLY',
