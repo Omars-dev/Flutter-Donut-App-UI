@@ -109,28 +109,28 @@ class HomePage extends StatelessWidget {
         ),
         bottomNavigationBar: CurvedNavigationBar(
           color: Color(0xFFF8BBD0),
-          height: 56,
+          height: 54,
           backgroundColor: Colors.transparent,
           onTap: (index){},
           items: const [
             Icon(
               Icons.home,
-              size: 30,
+              size: 28,
               color: Color(0xFFEC407A),
             ),
             Icon(
               Icons.shopping_cart,
-              size: 30,
+              size: 28,
               color: Color(0xFFEC407A),
             ),
             Icon(
               Icons.favorite,
-              size: 30,
+              size: 28,
               color: Color(0xFFEC407A),
             ),
             Icon(
               Icons.account_circle_outlined,
-              size: 30,
+              size: 28,
               color: Color(0xFFEC407A),
             ),
           ],
