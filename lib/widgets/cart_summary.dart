@@ -10,7 +10,7 @@ import 'package:flutter_donut_app_ui/theme_style/app_constants.dart';
 //   Widget build(BuildContext context) {
 //     return Container(
 //       height: 310,
-//       padding: const EdgeInsets.all(24),
+//       padding: const EdgeInsets.all(20),
 //       decoration: const BoxDecoration(
 //           color: Color(0xFFe9e9e9),
 //           borderRadius: BorderRadius.only(
@@ -136,7 +136,7 @@ class CartSummary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 24,vertical: 20),
+      padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 20),
       decoration: const BoxDecoration(
         color: Color(0xFFe9e9e9),
         borderRadius: BorderRadius.only(

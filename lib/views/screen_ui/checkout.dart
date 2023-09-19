@@ -27,7 +27,7 @@ class CheckoutPage extends StatelessWidget {
               children: [
                 // Existing ListView content
                 const Padding(
-                  padding: EdgeInsets.all(24),
+                  padding: EdgeInsets.all(20),
                   child: Text('Checkout',
                       style: TextStyle(
                           fontWeight: FontWeight.w700,
@@ -36,7 +36,7 @@ class CheckoutPage extends StatelessWidget {
                 ),
                 Container(
                   padding: const EdgeInsets.all(16),
-                  margin: const EdgeInsets.symmetric(horizontal: 24),
+                  margin: const EdgeInsets.symmetric(horizontal: 20),
                   decoration: BoxDecoration(
                       color: themeColor, borderRadius: BorderRadius.circular(20)),
                   child: Column(
@@ -116,7 +116,7 @@ class CheckoutPage extends StatelessWidget {
                 const SizedBox(height: 10),
                 Container(
                   padding: const EdgeInsets.all(16),
-                  margin: const EdgeInsets.symmetric(horizontal: 24),
+                  margin: const EdgeInsets.symmetric(horizontal: 20),
                   decoration: BoxDecoration(
                       color: themeColor, borderRadius: BorderRadius.circular(20)),
                   child: Column(
@@ -142,15 +142,15 @@ class CheckoutPage extends StatelessWidget {
                           children: [
                             Row(
                               children: [
-                                Icon(Icons.local_shipping, size: 18),
-                                SizedBox(width: 10),
-                                Text(
+                                const Icon(Icons.local_shipping, size: 18),
+                                const SizedBox(width: 10),
+                                const Text(
                                     'DHL',
                                     style: TextStyle(
                                         fontSize: 14,
                                         fontWeight: w400,
                                         color: Colors.black54)),
-                                Spacer(),
+                                const Spacer(),
                                 Container(
                                   width: 16,
                                   height: 16,
@@ -165,15 +165,15 @@ class CheckoutPage extends StatelessWidget {
                             const SizedBox(height: 5),
                             Row(
                               children: [
-                                Icon(Icons.local_shipping, size: 18),
-                                SizedBox(width: 10),
-                                Text(
+                                const Icon(Icons.local_shipping, size: 18),
+                                const SizedBox(width: 10),
+                                const Text(
                                     'FEDX',
                                     style: TextStyle(
                                         fontSize: 14,
                                         fontWeight: w400,
                                         color: Colors.black54)),
-                                Spacer(),
+                                const Spacer(),
                                 Container(
                                   width: 16,
                                   height: 16,
@@ -188,15 +188,15 @@ class CheckoutPage extends StatelessWidget {
                             const SizedBox(height: 5),
                             Row(
                               children: [
-                                Icon(Icons.local_shipping, size: 18),
-                                SizedBox(width: 10),
+                                const Icon(Icons.local_shipping, size: 18),
+                                const SizedBox(width: 10),
                                 const Text(
                                     'REDX',
                                     style: TextStyle(
                                         fontSize: 14,
                                         fontWeight: w400,
                                         color: Colors.black54)),
-                                Spacer(),
+                                const Spacer(),
                                 Container(
                                   width: 16,
                                   height: 16,
@@ -211,15 +211,15 @@ class CheckoutPage extends StatelessWidget {
                             const SizedBox(height: 5),
                             Row(
                               children: [
-                                Icon(Icons.local_shipping, size: 18),
-                                SizedBox(width: 10),
+                                const Icon(Icons.local_shipping, size: 18),
+                                const SizedBox(width: 10),
                                 const Text(
                                     'PAPER FLY',
                                     style: TextStyle(
                                         fontSize: 14,
                                         fontWeight: w400,
                                         color: Colors.black54)),
-                                Spacer(),
+                                const Spacer(),
                                 Container(
                                   width: 16,
                                   height: 16,
