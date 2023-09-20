@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_donut_app_ui/views/screen_ui/cart_details.dart';
 import 'package:url_strategy/url_strategy.dart';
-import 'views/screen_ui/home_page.dart';
 
 void main() {
   setPathUrlStrategy();
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           primarySwatch: Colors.pink,
       ),
-      home: HomePage(),
+      home: CartDetails(),
     );
   }
 }
