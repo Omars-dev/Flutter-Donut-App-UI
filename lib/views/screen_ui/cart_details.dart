@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_donut_app_ui/theme_style/app_constants.dart';
 import 'package:flutter_donut_app_ui/widgets/appbar/home_appbar.dart';
 import 'package:flutter_donut_app_ui/widgets/cart_summary.dart';
 
@@ -30,26 +31,43 @@ class CartDetails extends StatelessWidget {
                       fontWeight: FontWeight.w700),
                 ),
               ),
-              SizedBox(height: 30),
-              Row(
-                children: [
-                  Text('Strawberry Donut'),
-                  Spacer(),
-                  Text('\$95'),
-                  Column(
-                    children: [
-                      Text('Qty: 1x'),
-                    ],
-                  )
-                ],
+              const SizedBox(height: 30),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 24),
+                child: Row(
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(
+                        color: mainButtonColor,
+                        borderRadius: BorderRadius.circular(50),
+                      ),
+                      width: 18,
+                      height: 18,
+                      padding: const EdgeInsets.only(top: 2.0, bottom: 5,right: 2,left: 5),
+                      child: const Text(
+                        '1',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
+                    SizedBox(width: 10),
+                    const Text('Strawberry Donut'),
+                    const Spacer(),
+                    const Text('\$95'),
+                  ],
+                ),
               ),
-              SizedBox(height: 35),
+              const SizedBox(height: 10),
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 24.0),
+                child: Text('Quantity: 1x'),
+              ),
+              const SizedBox(height: 35),
               CartSummary(
                   subtotal: 280,
                   discount: 5,
                   feesAndTax: 10,
                   total: 285,
-                  onCheckoutPressed: (){})
+                  onCheckoutPressed: () {})
             ],
           ),
         ),
