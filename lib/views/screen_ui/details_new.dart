@@ -211,7 +211,7 @@ class DetailsNew extends StatelessWidget {
                       children: [
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
+                          children: [
                             Text(
                               '\$55.56',
                               style: TextStyle(
@@ -227,7 +227,8 @@ class DetailsNew extends StatelessWidget {
                                 fontWeight: FontWeight.w500,
                                 fontSize: 12,
                               ),
-                            )
+                            ),
+
                           ],
                         ),
                         GestureDetector(

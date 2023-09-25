@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_donut_app_ui/theme_style/app_constants.dart';
 import 'package:flutter_donut_app_ui/widgets/appbar/home_appbar.dart';
-import 'package:flutter_donut_app_ui/widgets/cart_summary.dart';
 
 class CartDetails extends StatelessWidget {
   const CartDetails({Key? key}) : super(key: key);
@@ -43,7 +42,8 @@ class CartDetails extends StatelessWidget {
                       ),
                       width: 18,
                       height: 18,
-                      padding: const EdgeInsets.only(top: 2.0, bottom: 5,right: 2,left: 5),
+                      padding: const EdgeInsets.only(
+                          top: 2.0, bottom: 5, right: 2, left: 5),
                       child: const Text(
                         '1',
                         style: TextStyle(color: Colors.white),
@@ -62,12 +62,6 @@ class CartDetails extends StatelessWidget {
                 child: Text('Quantity: 1x'),
               ),
               const SizedBox(height: 35),
-              CartSummary(
-                  subtotal: 280,
-                  discount: 5,
-                  feesAndTax: 10,
-                  total: 285,
-                  onCheckoutPressed: () {})
             ],
           ),
         ),
